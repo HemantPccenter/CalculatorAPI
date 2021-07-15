@@ -32,9 +32,9 @@
   	<distributionManagement>
  		<!-- Publish the versioned releases here -->
  		<repository>
-  			<id>PranodaydNexusRepo</id>
-  			<name>PranodaydNexusRepo</name>
-  			<url>http://192.168.43.10:8081/repository/NSDLTraining/</url>
+  			<id>HemantNexusRepo</id>
+  			<name>HemantNexusRepo</name>
+  			<url>http://192.168.1.4:8081/repository/CalculatorHemant/</url>
  		</repository>
 
 	</distributionManagement>
