@@ -33,7 +33,7 @@
  		<!-- Publish the versioned releases here -->
  		<repository>
   			<id>HemantNexusRepo</id>
-  			<name>HemantNexusRepo</name>
+  			<name>HemantRepo</name>
   			<url>http://192.168.1.4:8081/repository/CalculatorHemant/</url>
  		</repository>
 
