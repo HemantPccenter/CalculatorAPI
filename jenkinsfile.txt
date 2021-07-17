@@ -1,0 +1,25 @@
+pipeline {
+    agent any
+
+    tools {
+        // Install the Maven version configured as "M3" and add it to the path.
+        maven "MyMaven"
+    }
+
+    stages {
+        stage('Pulling code from Github') {
+            steps {
+                // Get some code from a GitHub repository
+                git credentialsId: 'dc7e5c73-a004-4adf-8b11-122b58a2e7f1', url: 'https://github.com/HemantPccenter/CalculatorAPI.git'
+
+                // Run Maven on a Unix agent.
+                bat 'mvn deploy'
+
+                // To run Maven on a Windows agent, use
+                // bat "mvn -Dmaven.test.failure.ignore=true clean package"
+            }
+
+           
+            }
+        }
+    }
